@@ -25,7 +25,8 @@ In success will return 201 and `JOB ID` in response for further use, to download
 3) GET -> `generator/getJobResult/{id}` Download results of job with `id`
 
 ##HOW TO RUN (On Mac/Linux):
-Before run application please run docker-compose `docker-compose up -d` first to run PostgreSQL Database and configure it.
+
+####Before run application please run docker-compose `docker-compose up -d` first to run PostgreSQL Database and configure it.
 
 1) Application `gradle bootRun`
 
