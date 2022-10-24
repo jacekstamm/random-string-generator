@@ -35,8 +35,14 @@ public class AwsStorageService {
     public JobResultDto uploadFile(File resultFile) {
         String fileName = resultFile.getName();
         s3Client.putObject(new PutObjectRequest(bucketName, fileName, resultFile));
-        resultFile.deleteOnExit();
+        deleteFIle(resultFile, fileName);
         return new JobResultDto(fileName);
+    }
+
+    private void deleteFIle(File resultFile, String fileName) {
+        if (resultFile.delete()) {
+            log.debug("FIle with name:" + fileName + " is deleted.");
+        }
     }
 
 
