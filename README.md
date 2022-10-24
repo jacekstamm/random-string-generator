@@ -18,8 +18,12 @@ Example of request body:
 }
 
 In success will return 201 and `JOB ID` in response for further use, to download results.
+
 2) GET -> `generator/jobThreadsRunning` check how many job threads are running
+
+
 3) GET -> `generator/getJobResult/{id}` Download results of job with `id`
+
 ##HOW TO RUN (On Mac/Linux):
 1) Application `gradle bootRun`
 2) Tests `gralde test`
