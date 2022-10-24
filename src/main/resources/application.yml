@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/recruitment_db
+    username: edrone_task
+    password: edrone_generator_password
+  jpa:
+    open-in-view: false
+  liquibase:
+    change-log: classpath:db/changelog-master.xml
+
+application:
+  bucket:
+    name: string-generator-aws
+
+cloud:
+  aws:
+    credentials:
+      access-key: AKIAVVZICHBVODR7TCXS
+      secret-key: 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
+    region:
+      static: eu-central-1
+    stack:
+      auto: false
+
