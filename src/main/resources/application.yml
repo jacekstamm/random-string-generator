@@ -18,8 +18,8 @@ application:
 cloud:
   aws:
     credentials:
-      access-key: AKIAVVZICHBVODR7TCXS
-      secret-key: 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
+      access-key:
+      secret-key:
     region:
       static: eu-central-1
     stack:

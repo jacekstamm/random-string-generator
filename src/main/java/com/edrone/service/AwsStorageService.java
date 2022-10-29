@@ -45,7 +45,6 @@ public class AwsStorageService {
         }
     }
 
-
     @Transactional
     public byte[] downloadFile(UUID id) {
         JobResultDto result = mapper.mapEntityToDto(repository.getReferenceById(id));
